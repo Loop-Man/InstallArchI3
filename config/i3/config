@@ -383,6 +383,9 @@ mode "$mode_gaps_outer" {
 # Specific window behaviour
 assign [class="Brave-browser"] $ws2
 assign [class="firefox"] $ws2
+assign [class="BurpSuitePro"] $ws2
+assign [class="cherrytree"] $ws1
+assign [class="keepassxc"]$ws5
 #assign [class="Pidgin"] $ws3
 #assign [class="Corebird"] $ws3
 #assign [class="TelegramDesktop"] $ws3
