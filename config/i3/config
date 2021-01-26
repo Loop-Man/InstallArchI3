@@ -257,8 +257,9 @@ mode "qopen" {
     bindsym f exec brave-browser-nightly, mode "default"
     bindsym t exec thunderbird, mode "default"
 
-    bindsym a exec --no-startup-id cawbird; exec --no-startup-id telegram-desktop; exec --no-startup-id brave-browser-nightly; exec --no-startup-id thunderbird, mode "default"
-
+    #bindsym a exec --no-startup-id cawbird; exec --no-startup-id telegram-desktop; exec --no-startup-id brave-browser-nightly; exec --no-startup-id thunderbird, mode "default"
+    bindsym a exec --no-startup-id keepassxc; exec --no-startup-id cherrytree; exec --no-startup-id firefox; exec --no-startup-id BurpSuitePro, mode "default"
+    
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
