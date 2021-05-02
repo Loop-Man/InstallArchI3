@@ -294,7 +294,7 @@ echo ""
 
 echo "Setting Display Manager"
 
-sudo pacman -Syyuu && \ 
+sudo pacman -Syyuu
 yay -Syyuu
 
 sudo pacman -S --noconfirm --needed i3-gaps                     # i3-gaps is a fork of i3wm, a tiling window manager for X11
