@@ -275,7 +275,7 @@ yay -S --noconfirm --needed ttf-mac-fonts                               # FUENTE
 yay -S --noconfirm --needed nerd-fonts-hack                             # FUENTE
 #yay -S --noconfirm --needed brave-nightly-bin                          # Navegador web brave
 yay -S --noconfirm --needed brave-bin
-yay -S --noconfirm --needed gksu                                        # Permite iniciar aplicaciones gráficas desde consola con otro usuario pidiendo sus datos.
+#yay -S --noconfirm --needed gksu                                        # Permite iniciar aplicaciones gráficas desde consola con otro usuario pidiendo sus datos.
 yay -S --noconfirm --needed cherrytree                                  # Programa de notas offline
 #yay -S --noconfirm --needed remmina-plugin-rdesktop                    # Plugin para rdesktop de remina
 #yay -S --noconfirm --needed etcher-bin                                  # Etcher es una utilidad gratuita y de código abierto que se utiliza para grabar archivos de imagen como archivos .iso y .img
