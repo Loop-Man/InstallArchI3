@@ -469,13 +469,6 @@ sudo pacman -S --noconfirm --needed python-pipenv #Instala pipenv para crear ent
 yay -S --noconfirm --needed rockyou                                     # Diccionario rockyou de owasp
 yay -S --noconfirm --needed samdump2                                    # Para dumpear password en claro de los ficheros sam y system
 
-## Actualizo plugins, scripts y exploits
-
-sudo updatedb
-sudo searchsploit -u
-sudo nmap --script-updatedb
-#sudo cve_searchsploit -u
-
 ## Instalo xfreerdp
 
 #git clone https://aur.archlinux.org/rocket-depot-git.git ~/tools/
@@ -483,7 +476,6 @@ sudo nmap --script-updatedb
 #makepkg -si
 
 ## Personal ADD  UNTESTED
-
 
 yay -Sy --needed acpi
 yay -Sy --needed airgeddon-git 
@@ -596,3 +588,10 @@ sudo -- sh -c 'echo "_JAVA_AWT_WM_NONREPARENTING=1" > /etc/environment'
 
 # Configuration for root
 echo "sudo -- sh -c 'ln -sf /home/user/.bashrc /root/.bashrc'"
+
+## Actualizo plugins, scripts y exploits
+
+sudo updatedb
+sudo nmap --script-updatedb
+sudo searchsploit -u
+#sudo cve_searchsploit -u
