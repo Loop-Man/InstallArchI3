@@ -294,8 +294,8 @@ echo ""
 
 echo "Setting Display Manager"
 
-sudo pacman -Syyuu
-yay -Syyuu
+sudo pacman -Syyuu --noconfirm 
+yay -Syyuu --noconfirm 
 
 sudo pacman -S --noconfirm --needed i3-gaps                     # i3-gaps is a fork of i3wm, a tiling window manager for X11
 sudo pacman -S --noconfirm --needed i3blocks                    # Define bloques para la barra de estado de i3bar
@@ -477,117 +477,108 @@ yay -S --noconfirm --needed samdump2                                    # Para d
 
 ## Personal ADD  UNTESTED
 
-yay -Sy --needed acpi
-yay -Sy --needed airgeddon-git 
-yay -Sy --needed arp-scan
-yay -Sy --needed asleap
-yay -Sy --needed autopsy
-yay -Sy --needed batify
-yay -Sy --needed berate_ap-git
-yay -Sy --needed bloodhound
-yay -Sy --needed blueman
-yay -Sy --needed caja-deja-dup-bzr
-yay -Sy --needed caja-extensions-common
-yay -Sy --needed caja-open-terminal
-yay -Sy --needed caja-share 
-yay -Sy --needed cbatticon
-yay -Sy --needed cewl
-yay -Sy --needed Cewl
-yay -Sy --needed code
-yay -Sy --needed crackmapexec
-yay -Sy --needed crackmapexec 
-yay -Sy --needed create_ap
-yay -Sy --needed curl
-yay -Sy --needed dhclient
-yay -Sy --needed dhcpdump
-yay -Sy --needed dmks
-yay -Sy --needed docker
-yay -Sy --needed dwdiff
-yay -Sy --needed engrampa
-yay -Sy --needed enum4linux
-yay -Sy --needed file-roller
-yay -Sy --needed freedesktop
-yay -Sy --needed gnome-keyring 
-yay -Sy --needed go
-yay -Sy --needed gobuster
-yay -Sy --needed hash-identifier
-yay -Sy --needed hg
-yay -Sy --needed hostapd
-yay -Sy --needed hostapd-mana
-yay -Sy --needed hostapd-wpe
-yay -Sy --needed i3blocks
-yay -Sy --needed i3status
-yay -Sy --needed impacket
-yay -Sy --needed java
-yay -Sy --needed joplin
-yay -Sy --needed keepassxc
-yay -Sy --needed libnotify
-yay -Sy --needed libnotify-cil
-yay -Sy --needed libnotify-cil-dev
-yay -Sy --needed libva
-yay -Sy --needed linux
-yay -Sy --needed linux-headers
-yay -Sy --needed m2crypto
-yay -Sy --needed mana-toolkit
-yay -Sy --needed mate-monitor
-yay -Sy --needed System-monitor 
-yay -Sy --needed mesa
-yay -Sy --needed mesa-git
-yay -Sy --needed miraclecast
-yay -Sy --needed miraclecast-git
-yay -Sy --needed neo4j-community
-yay -Sy --needed nessus
-yay -Sy --needed opencl-amd
-yay -Sy --needed opensc-opendnie-git
-yay -Sy --needed pasystray
-yay -Sy --needed pavucontrol
-yay -Sy --needed pcsclite
-yay -Sy --needed pcsc-tools
-yay -Sy --needed pkcs11-tool
-yay -Sy --needed postgresql
-yay -Sy --needed pth-toolkit
-yay -Sy --needed python3
-yay -Sy --needed python3.8
-yay -Sy --needed python-m2crypto
-yay -Sy --needed r1133.d160214,
-yay -Sy --needed responder
-yay -Sy --needed rpcclient smbclient
-yay -Sy --needed rtl8812au
-yay -Sy --needed rtl8812au-dkms-git
-yay -Sy --needed rtl8814au
-yay -Sy --needed rtl8814au-dkms-git 
-yay -Sy --needed rtl88xxau-aircrack-dkms-git
-yay -Sy --needed samba
-yay -Sy --needed screen
-yay -Sy --needed scribus
-yay -Sy --needed scrot
-yay -Sy --needed smb
-yay -Sy --needed smbclient
-yay -Sy --needed sqlitebrowser
-yay -Sy --needed sslstrip mdk4 crunch pixiewps python2-crypto --overwrite
-yay -Sy --needed swig
-yay -Sy --needed system-monitor
-yay -Sy --needed teams
-yay -Sy --needed vainfo
-yay -Sy --needed wafw00f
-yay -Sy --needed x11-ssh-askpass
-yay -Sy --needed xterm scrot jq
-yay -Sy --needed zsh
-yay -Sy --needed nitrogen
-
-# ----------------
-# Personal Configuration Raul
-# ----------------
-
-sudo pacman -S --noconfirm --needed nextcloud-client  # Para matar graficamente un programa
-echo "Disabling beep sound"
-sudo -- sh -c 'echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf'
-
-echo "Configuring Nice Burpsuite"
-sudo -- sh -c 'echo "_JAVA_AWT_WM_NONREPARENTING=1" > /etc/environment'
-
-# Configuration for root
-echo "sudo -- sh -c 'ln -sf /home/user/.bashrc /root/.bashrc'"
+yay -Sy --noconfirm --needed acpi 
+yay -Sy --noconfirm --needed airgeddon-git 
+yay -Sy --noconfirm --needed arp-scan
+yay -Sy --noconfirm --needed asleap
+yay -Sy --noconfirm --needed autopsy
+yay -Sy --noconfirm --needed batify
+yay -Sy --noconfirm --needed berate_ap-git
+yay -Sy --noconfirm --needed bloodhound
+yay -Sy --noconfirm --needed blueman
+yay -Sy --noconfirm --needed caja-deja-dup-bzr
+yay -Sy --noconfirm --needed caja-extensions-common
+yay -Sy --noconfirm --needed caja-open-terminal
+yay -Sy --noconfirm --needed caja-share 
+yay -Sy --noconfirm --needed cbatticon
+yay -Sy --noconfirm --needed cewl
+yay -Sy --noconfirm --needed Cewl
+yay -Sy --noconfirm --needed code
+yay -Sy --noconfirm --needed crackmapexec
+yay -Sy --noconfirm --needed crackmapexec 
+yay -Sy --noconfirm --needed create_ap
+yay -Sy --noconfirm --needed curl
+yay -Sy --noconfirm --needed dhclient
+yay -Sy --noconfirm --needed dhcpdump
+yay -Sy --noconfirm --needed dmks
+yay -Sy --noconfirm --needed docker
+yay -Sy --noconfirm --needed dwdiff
+yay -Sy --noconfirm --needed engrampa
+yay -Sy --noconfirm --needed enum4linux
+yay -Sy --noconfirm --needed file-roller
+yay -Sy --noconfirm --needed freedesktop
+yay -Sy --noconfirm --needed gnome-keyring 
+yay -Sy --noconfirm --needed go
+yay -Sy --noconfirm --needed gobuster
+yay -Sy --noconfirm --needed hash-identifier
+yay -Sy --noconfirm --needed hg
+yay -Sy --noconfirm --needed hostapd
+yay -Sy --noconfirm --needed hostapd-mana
+yay -Sy --noconfirm --needed hostapd-wpe
+yay -Sy --noconfirm --needed i3blocks
+yay -Sy --noconfirm --needed i3status
+yay -Sy --noconfirm --needed impacket
+yay -Sy --noconfirm --needed java
+yay -Sy --noconfirm --needed joplin
+yay -Sy --noconfirm --needed keepassxc
+yay -Sy --noconfirm --needed libnotify
+yay -Sy --noconfirm --needed libnotify-cil
+yay -Sy --noconfirm --needed libnotify-cil-dev
+yay -Sy --noconfirm --needed libva
+yay -Sy --noconfirm --needed linux
+yay -Sy --noconfirm --needed linux-headers
+yay -Sy --noconfirm --needed m2crypto
+yay -Sy --noconfirm --needed mana-toolkit
+yay -Sy --noconfirm --needed mate-monitor
+yay -Sy --noconfirm --needed System-monitor 
+yay -Sy --noconfirm --needed mesa
+yay -Sy --noconfirm --needed mesa-git
+yay -Sy --noconfirm --needed miraclecast
+yay -Sy --noconfirm --needed miraclecast-git
+yay -Sy --noconfirm --needed neo4j-community
+yay -Sy --noconfirm --needed nessus
+yay -Sy --noconfirm --needed opencl-amd
+yay -Sy --noconfirm --needed opensc-opendnie-git
+yay -Sy --noconfirm --needed pasystray
+yay -Sy --noconfirm --needed pavucontrol
+yay -Sy --noconfirm --needed pcsclite
+yay -Sy --noconfirm --needed pcsc-tools
+yay -Sy --noconfirm --needed pkcs11-tool
+yay -Sy --noconfirm --needed postgresql
+yay -Sy --noconfirm --needed pth-toolkit
+yay -Sy --noconfirm --needed python-m2crypto
+#yay -Sy --noconfirm --needed r1133.d160214
+yay -Sy --noconfirm --needed responder
+yay -Sy --noconfirm --needed rpcclient 
+yay -Sy --noconfirm --needed smbclient
+yay -Sy --noconfirm --needed rtl8812au
+yay -Sy --noconfirm --needed rtl8812au-dkms-git
+yay -Sy --noconfirm --needed rtl8814au
+yay -Sy --noconfirm --needed rtl8814au-dkms-git 
+yay -Sy --noconfirm --needed rtl88xxau-aircrack-dkms-git
+yay -Sy --noconfirm --needed samba
+yay -Sy --noconfirm --needed screen
+yay -Sy --noconfirm --needed scribus
+yay -Sy --noconfirm --needed scrot
+yay -Sy --noconfirm --needed smb
+yay -Sy --noconfirm --needed smbclient
+yay -Sy --noconfirm --needed sqlitebrowser
+yay -Sy --noconfirm --needed sslstrip
+yay -Sy --noconfirm --needed mdk4
+yay -Sy --noconfirm --needed crunch
+yay -Sy --noconfirm --needed pixiewps
+yay -Sy --noconfirm --needed python2-crypto
+yay -Sy --noconfirm --needed swig
+yay -Sy --noconfirm --needed system-monitor
+yay -Sy --noconfirm --needed teams
+yay -Sy --noconfirm --needed vainfo
+yay -Sy --noconfirm --needed wafw00f
+yay -Sy --noconfirm --needed x11-ssh-askpass
+yay -Sy --noconfirm --needed xterm  
+yay -Sy --noconfirm --needed scrot
+yay -Sy --noconfirm --needed jq
+yay -Sy --noconfirm --needed zsh
+yay -Sy --noconfirm --needed nitrogen
 
 ## Actualizo plugins, scripts y exploits
 
