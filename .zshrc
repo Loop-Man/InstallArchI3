@@ -246,8 +246,8 @@ function fzf-lovely(){
 }
 
 export SUDO_ASKPASS="$HOME/.config/i3/bin/dmenupass"
-alias burpsuite="sudo -A burpsuite"
-alias burpsuite-pro="sudo -A burpsuite-pro"
+alias burpsuite="sudo -A burpsuite &;disown"
+alias burpsuite-pro="sudo -A burpsuite-pro &;disown"
 
 # Manual Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
