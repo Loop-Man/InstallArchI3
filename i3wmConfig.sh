@@ -61,19 +61,19 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 sleep 5
 
-echo "Setting some configuration..."
-sudo updatedb # Update mlocate db
-sudo localectl set-x11-keymap es # Set the keyboard map to es
+#echo "Setting some configuration..."
+#sudo updatedb # Update mlocate db
+#sudo localectl set-x11-keymap es # Set the keyboard map to es
 # sudo localectl set-x11-keymap colemak # Set the keyboard map to colemak
 
 # Config pacman
 
-if [ ! -d "/etc/pacman.d/hooks" ]
-then
-    sudo mkdir -p /etc/pacman.d/hooks
-fi
-sudo cp mirrorupgrade.hook /etc/pacman.d/hooks/
-sudo cp pacman.conf /etc/
+#if [ ! -d "/etc/pacman.d/hooks" ]
+#then
+#    sudo mkdir -p /etc/pacman.d/hooks
+#fi
+#sudo cp mirrorupgrade.hook /etc/pacman.d/hooks/
+#sudo cp pacman.conf /etc/
 
 echo "Disabling beep sound"
 sudo -- sh -c 'echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf'
@@ -81,9 +81,9 @@ sudo -- sh -c 'echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf'
 echo "Configuring Nice Burpsuite"
 sudo -- sh -c 'echo "_JAVA_AWT_WM_NONREPARENTING=1" > /etc/environment'
 
-echo "Setting fish shell"
-chsh -s $(which fish)
-sudo chsh -s $(which fish)
+#echo "Setting fish shell"
+#chsh -s $(which fish)
+#sudo chsh -s $(which fish)
 
 echo "To configure root files execute:"
 echo "sudo -- sh -c 'ln -sf /home/user/.vim /root/.vim'"
