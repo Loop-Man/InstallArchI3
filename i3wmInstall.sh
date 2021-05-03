@@ -295,7 +295,9 @@ echo ""
 echo "Setting Display Manager"
 
 sudo pacman -Syyuu --noconfirm 
-yay -Syyuu --noconfirm 
+yay -Syyuu --noconfirm
+
+sudo pacman -S nvidia nvidia-utils nvidia-settings xorg-server xorg-apps xorg-xinit i3 numlockx -noconfirm -needed
 
 sudo pacman -S --noconfirm --needed i3-gaps                     # i3-gaps is a fork of i3wm, a tiling window manager for X11
 sudo pacman -S --noconfirm --needed i3blocks                    # Define bloques para la barra de estado de i3bar
