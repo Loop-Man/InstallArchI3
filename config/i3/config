@@ -327,9 +327,7 @@ bindsym $modkey+c exec $term -e calcurse
 # Start Apps
 bindsym $modkey+a exec --no-startup-id xfce4-appfinder
 bindsym $modkey+n exec --no-startup-id nm-connection-editor
-#bindsym $modkey+b exec --no-startup-id gksudo burpsuite #Obsoleto
-#bindsym $modkey+b exec --no-startup-id pkexec burpsuite
-bindsym $modkey+Shift+b exec --no-startup-id sudo burpsuite
+#bindsym $modkey+Shift+B exec --no-startup-id sudo burpsuite
 bindsym $modkey+b exec --no-startup-id sudo burpsuite-pro
 
 # Misc (above)
