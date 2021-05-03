@@ -85,6 +85,10 @@ sudo -- sh -c 'echo "_JAVA_AWT_WM_NONREPARENTING=1" > /etc/environment'
 #chsh -s $(which fish)
 #sudo chsh -s $(which fish)
 
+echo "Setting zsh shell"
+chsh -s /usr/share/zsh
+sudo chsh -s /usr/share/zsh
+
 echo "To configure root files execute:"
 echo "sudo -- sh -c 'ln -sf /home/user/.vim /root/.vim'"
 sudo -- sh -c 'ln -sf /home/user/.vim /root/.vim'
