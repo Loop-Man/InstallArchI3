@@ -59,7 +59,7 @@ chmod +x ~/.config/i3blocks/blocks/*
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-sleep 5
+sleep 10
 
 echo "Setting some configuration..."
 sudo updatedb # Update mlocate db
@@ -74,6 +74,7 @@ then
 fi
 sudo cp mirrorupgrade.hook /etc/pacman.d/hooks/
 sudo cp pacman.conf /etc/
+pacman -Syyuu
 
 echo "Disabling beep sound"
 sudo -- sh -c 'echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf'
