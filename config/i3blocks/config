@@ -17,21 +17,21 @@ interval=2
 
 [vpn]
 interval=21
-command=VPNCurlNetctl
+command="./bocks/VPNCurlNetctl"
 
 [bandwidth]
 interval=persist
 markup=pango
 label= 
-INTERFACE=enp0s31f6
+INTERFACE=ens33
 USE_BITS=1
 
-[bandwidth]
-interval=persist
-markup=pango
-label= 
-INTERFACES=wlp4s0
-USE_BITS=1
+#[bandwidth]
+#interval=persist
+#markup=pango
+#label= 
+#INTERFACES=wlp4s0
+#USE_BITS=1
 
 [cpu]
 label= 
