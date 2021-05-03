@@ -98,6 +98,8 @@ sudo -- sh -c 'ln -sf /home/user/.bashrc /root/.bashrc'
 echo "sudo -- sh -c 'ln -sf /home/user/.config/fish /root/.config/'"
 sudo -- sh -c 'mkdir /root/.config'
 sudo -- sh -c 'ln -sf /home/user/.config/fish /root/.config/'
+echo "sudo -- sh -c 'ln -sf /home/user/.zshrc /root/.zshrc'"
+sudo -- sh -c 'ln -sf /home/user/.zshrc /root/.zshrc'
 
 #echo "Remember set up firefox--> about:config --> ui.context_menus.after_mouseup --> true"
 #echo "Remove InstallArch Directory"
