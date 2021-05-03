@@ -81,10 +81,15 @@ sudo -- sh -c 'echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf'
 
 echo "Configuring Nice Burpsuite"
 sudo -- sh -c 'echo "_JAVA_AWT_WM_NONREPARENTING=1" > /etc/environment'
+sudo pacman -S --noconfirm --needed jre11-openjdk
+sudo archlinux-java set java-11-openjdk
 
 #echo "Setting fish shell"
 #chsh -s $(which fish)
 #sudo chsh -s $(which fish)
+#echo "sudo -- sh -c 'ln -sf /home/user/.config/fish /root/.config/'"
+#sudo -- sh -c 'mkdir /root/.config'
+#sudo -- sh -c 'ln -sf /home/user/.config/fish /root/.config/'
 
 echo "To configure root files execute:"
 echo "sudo -- sh -c 'ln -sf /home/user/.vim /root/.vim'"
@@ -95,15 +100,6 @@ sudo -- sh -c 'ln -sf /home/user/.tmux.conf /root/.tmux.conf'
 # Configuration for root
 echo "sudo -- sh -c 'ln -sf /home/user/.bashrc /root/.bashrc'"
 sudo -- sh -c 'ln -sf /home/user/.bashrc /root/.bashrc'
-
-echo "sudo -- sh -c 'ln -sf /home/user/.config/fish /root/.config/'"
-sudo -- sh -c 'mkdir /root/.config'
-sudo -- sh -c 'ln -sf /home/user/.config/fish /root/.config/'
-echo "sudo -- sh -c 'ln -sf /home/user/.zshrc /root/.zshrc'"
-sudo -- sh -c 'ln -sf /home/user/.zshrc /root/.zshrc'
-
-echo "sudo -- sh -c 'ln -sf /home/user/.zsh /root/.zsh'"
-sudo -- sh -c 'ln -sf /home/user/.zsh /root/.zsh'
 
 #echo "Remember set up firefox--> about:config --> ui.context_menus.after_mouseup --> true"
 #echo "Remove InstallArch Directory"
