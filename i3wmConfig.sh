@@ -95,11 +95,15 @@ sudo -- sh -c 'ln -sf /home/user/.tmux.conf /root/.tmux.conf'
 # Configuration for root
 echo "sudo -- sh -c 'ln -sf /home/user/.bashrc /root/.bashrc'"
 sudo -- sh -c 'ln -sf /home/user/.bashrc /root/.bashrc'
+
 echo "sudo -- sh -c 'ln -sf /home/user/.config/fish /root/.config/'"
 sudo -- sh -c 'mkdir /root/.config'
 sudo -- sh -c 'ln -sf /home/user/.config/fish /root/.config/'
 echo "sudo -- sh -c 'ln -sf /home/user/.zshrc /root/.zshrc'"
 sudo -- sh -c 'ln -sf /home/user/.zshrc /root/.zshrc'
+
+echo "sudo -- sh -c 'ln -sf /home/user/.zsh /root/.zsh'"
+sudo -- sh -c 'ln -sf /home/user/.zsh /root/.zsh'
 
 #echo "Remember set up firefox--> about:config --> ui.context_menus.after_mouseup --> true"
 #echo "Remove InstallArch Directory"
