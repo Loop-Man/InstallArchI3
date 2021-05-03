@@ -40,3 +40,8 @@ echo " Cambiar la shell del usuario con: chsh -s /usr/bin/zsh"
 chsh -s /usr/bin/zsh
 echo " Cambiar la shell de root con: sudo chsh -s /usr/bin/zsh"
 sudo chsh -s /usr/bin/zsh
+
+echo "sudo -- sh -c 'ln -sf /home/user/.zshrc /root/.zshrc'"
+sudo -- sh -c 'ln -sf /home/user/.zshrc /root/.zshrc'
+echo "sudo -- sh -c 'ln -sf /home/user/.zsh /root/.zsh'"
+sudo -- sh -c 'ln -sf /home/user/.zsh /root/.zsh'
