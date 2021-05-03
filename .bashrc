@@ -191,7 +191,7 @@ ex ()
 # Personal Configuration
 alias nc='ncat'
 alias nmap='grc nmap'
-
+export SUDO_ASKPASS="$HOME/.config/i3/bin/dmenupass"
 #create a file called .bashrc-personal and put all your personal aliases
 #in there. They will not be overwritten by skel.
 
