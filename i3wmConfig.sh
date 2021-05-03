@@ -87,11 +87,15 @@ sudo -- sh -c 'echo "_JAVA_AWT_WM_NONREPARENTING=1" > /etc/environment'
 
 echo "To configure root files execute:"
 echo "sudo -- sh -c 'ln -sf /home/user/.vim /root/.vim'"
+sudo -- sh -c 'ln -sf /home/user/.vim /root/.vim'
 echo "sudo -- sh -c 'ln -sf /home/user/.tmux.conf /root/.tmux.conf'"
+sudo -- sh -c 'ln -sf /home/user/.tmux.conf /root/.tmux.conf'
 
 # Configuration for root
 echo "sudo -- sh -c 'ln -sf /home/user/.bashrc /root/.bashrc'"
+sudo -- sh -c 'ln -sf /home/user/.bashrc /root/.bashrc'
 echo "sudo -- sh -c 'ln -sf /home/user/.config/fish /root/.config/'"
+sudo -- sh -c 'ln -sf /home/user/.config/fish /root/.config/'
 
 #echo "Remember set up firefox--> about:config --> ui.context_menus.after_mouseup --> true"
 #echo "Remove InstallArch Directory"
