@@ -329,8 +329,8 @@ bindsym $modkey+a exec --no-startup-id xfce4-appfinder
 bindsym $modkey+n exec --no-startup-id nm-connection-editor
 #bindsym $modkey+b exec --no-startup-id gksudo burpsuite #Obsoleto
 #bindsym $modkey+b exec --no-startup-id pkexec burpsuite
-bindsym $modkey+Shift+b exec --no-startup-id sudo -A pkexec burpsuite
-bindsym $modkey+b exec --no-startup-id sudo -A pkexec BurpSuitePro
+bindsym $modkey+Shift+b exec --no-startup-id sudo burpsuite
+bindsym $modkey+b exec --no-startup-id sudo burpsuite-pro
 
 # Misc (above)
 new_window pixel 4
