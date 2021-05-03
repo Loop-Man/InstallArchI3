@@ -15,19 +15,19 @@ command=blocks/$BLOCK_NAME
 label= 
 interval=2
 
-#[bandwidth]
-#interval=persist
-#markup=pango
-#label= 
-#INTERFACE=enp0s31f6
-#USE_BITS=1
-#
-#[bandwidth]
-#interval=persist
-#markup=pango
-#label= 
-#INTERFACES=wlp4s0
-#USE_BITS=1
+[bandwidth]
+interval=persist
+markup=pango
+label= 
+INTERFACE=enp0s31f6
+USE_BITS=1
+
+[bandwidth]
+interval=persist
+markup=pango
+label= 
+INTERFACES=wlp4s0
+USE_BITS=1
 
 [cpu]
 label= 
