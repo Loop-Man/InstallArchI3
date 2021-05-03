@@ -15,6 +15,10 @@ command=blocks/$BLOCK_NAME
 label= 
 interval=2
 
+[vpn]
+interval=21
+command=VPNCurlNetctl
+
 [bandwidth]
 interval=persist
 markup=pango
