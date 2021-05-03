@@ -245,6 +245,7 @@ function fzf-lovely(){
         fi
 }
 
+export SUDO_ASKPASS="$HOME/.config/i3/bin/dmenupass"
 
 # Manual Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
