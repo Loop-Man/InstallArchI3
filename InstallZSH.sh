@@ -37,4 +37,6 @@ cp .zshrc ~/
 cp -r .zsh/ ~/
 
 echo " Cambiar la shell del usuario con: chsh -s /usr/bin/zsh"
+chsh -s /usr/bin/zsh
 echo " Cambiar la shell de root con: sudo chsh -s /usr/bin/zsh"
+sudo chsh -s /usr/bin/zsh
