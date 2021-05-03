@@ -283,6 +283,7 @@ yay -S --noconfirm --needed cherrytree                                  # Progra
 #yay -S --noconfirm --needed sublime-text                                # Sublime Text es un editor de texto y editor de código fuente está escrito en C++ y Python para los plugins.Desarrollado originalmente como una extensión de Vim.
 yay -S --noconfirm --needed burpsuite
 yay -S --noconfirm --needed burpsuite-pro
+yay -S --noconfirm --needed sux                                         #Para ejecutar programas como root, sux root burpsuite
 # these come always last
 yay -S --noconfirm --needed hardcode-fixer-git                          # Este programa pretende ser una solución segura, fácil y estandarizada al problema de los iconos de aplicaciones codificados en Linux. 
 sudo hardcode-fixer
