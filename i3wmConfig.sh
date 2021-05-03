@@ -74,7 +74,7 @@ then
 fi
 sudo cp mirrorupgrade.hook /etc/pacman.d/hooks/
 sudo cp pacman.conf /etc/
-pacman -Syyuu
+sudo pacman -Syyuu
 
 echo "Disabling beep sound"
 sudo -- sh -c 'echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf'
