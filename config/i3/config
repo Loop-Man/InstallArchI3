@@ -327,9 +327,10 @@ bindsym $modkey+c exec $term -e calcurse
 # Start Apps
 bindsym $modkey+a exec --no-startup-id xfce4-appfinder
 bindsym $modkey+n exec --no-startup-id nm-connection-editor
-#bindsym $modkey+b exec --no-startup-id gksudo burpsuite
-#bindsym $modkey+b exec --no-startup-id sudo -A burpsuite
-bindsym $modkey+b exec --no-startup-id sudo -A BurpSuitePro
+#bindsym $modkey+b exec --no-startup-id gksudo burpsuite #Obsoleto
+#bindsym $modkey+b exec --no-startup-id pkexec burpsuite
+bindsym $modkey+b exec --no-startup-id sudo -A pkexec burpsuite
+bindsym $modkey+B exec --no-startup-id sudo -A pkexec BurpSuitePro
 
 # Misc (above)
 new_window pixel 4
@@ -425,7 +426,6 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 # Autostart apps
 exec --no-startup-id picom --config $HOME/.config/picom/picom.conf &
 exec --no-startup-id feh --bg-fill --randomize ~/backgrounds/* &
-#exec --no-startup-id feh --bg-fill  ~/backgrounds/DRAMAtical.Murder.full.Noiz.jpg &
 exec --no-startup-id unclutter &
 exec --no-startup-id redshift &
 exec --no-startup-id nm-applet &
