@@ -18,9 +18,10 @@ sudo pacman -S --noconfirm --needed bat
 
 ##### Instalamos zsh #######
 
-wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+wget --no-check-certificate https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sed -i 's/\~\/.oh-my-zsh\}$/\~\/.zsh\/.oh-my-zsh\}/g' install.sh
-sh install.sh
+sh install.sh &>/dev/null &
+sleep 50
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/.zsh/.oh-my-zsh/themes/powerlevel10k
 sed -i 's/robbyrussell/powerlevel10k\/powerlevel10k/1' .zshrc
 rm -rf .zshrc.tmp
