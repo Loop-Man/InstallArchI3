@@ -15,16 +15,16 @@ command=blocks/$BLOCK_NAME
 label= 
 interval=2
 
-[vpn]
-interval=21
-command="./bocks/VPNCurlNetctl"
+#[vpn]
+#interval=21
+#command="./bocks/VPNCurlNetctl"
 
-[bandwidth]
-interval=persist
-markup=pango
-label= 
-INTERFACE=ens33
-USE_BITS=1
+#[bandwidth]
+#interval=persist
+#markup=pango
+#label= 
+#INTERFACE=ens33
+#USE_BITS=1
 
 #[bandwidth]
 #interval=persist
