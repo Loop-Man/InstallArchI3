@@ -192,6 +192,12 @@ ex ()
 alias nc='ncat'
 alias nmap='grc nmap'
 export SUDO_ASKPASS="$HOME/.config/i3/bin/dmenupass"
+
+#Deloitte
+alias vpn-caronte='cd && cd vpn && sudo openvpn --data-ciphers "BF-CBC" --config /home/orion/vpn/caronte.conf'
+alias Burpsuitepro='cd ~/Auditoria/burp/ && LD_PRELOAD=~/Auditoria/burp/fake-user.so java -jar `ls -t burpsuite_pro_*.jar | head -1`'
+alias iip='dig +short myip.opendns.com @resolver1.opendns.com'
+
 #create a file called .bashrc-personal and put all your personal aliases
 #in there. They will not be overwritten by skel.
 
