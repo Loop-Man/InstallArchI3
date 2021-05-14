@@ -164,6 +164,11 @@ alias df='df -h'
 #HTB vpn
 alias htbvpn='sudo /usr/bin/openvpn ~/HTB/ElderOrion.ovpn'
 
+#Deloitte
+alias vpn-caronte='cd && cd vpn && sudo openvpn --data-ciphers "BF-CBC" --config /home/orion/vpn/caronte.conf'
+alias Burpsuitepro='cd ~/Auditoria/burp/ && LD_PRELOAD=~/Auditoria/burp/fake-user.so java -jar `ls -t burpsuite_pro_*.jar | head -1`'
+alias iip='dig +short myip.opendns.com @resolver1.opendns.com'
+
 #Montar carpeta compartida en vmware
 alias montar='sudo mount -t fuse.vmhgfs-fuse .host:/$(vmware-hgfsclient) ~/Shared -o allow_other'
 
